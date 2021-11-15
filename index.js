@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", onPageLoaded);
 
 askMeBtn.addEventListener('click', function() {
     const result = classes.toggle("askmeList");
-    console.log(result)
 })
 
 
