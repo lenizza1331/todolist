@@ -7,6 +7,28 @@ const askMeBtn = document.querySelector('.askMe');
 const askmeList = document.querySelector('.askmeList');
 const classes = askmeList.classList;
 
+function onPageLoaded(){
+saveBtn.addEventListener("click", () => {
+    localStorage.setItem("toDoList", toDoList.innerHTML);
+    console.log(localStorage);
+});
+clearAll.addEventListener("click", () => {
+    toDoList.innerHTML = "";
+    localStorage.removeItem('toDoList', toDoList.innerHTML);
+    
+});
+
+function loadTodos() {
+    const data = localStorage.getItem("toDoList");
+    if (data) {
+        toDoList.innerHTML = data;
+    }
+    }
+    
+    loadTodos();
+}
+
+document.addEventListener("DOMContentLoaded", onPageLoaded);
 
 
 askMeBtn.addEventListener('click', function() {
