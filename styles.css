@@ -17,6 +17,8 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 15px;
     font-weight: bold;
+    border-radius:0 5px 5px 0;
+
 }
 .inputField {
     width: 50%;
@@ -24,6 +26,7 @@
     padding: 10px;
     font-family: 'Caveat', cursive;
     font-size: 40px;
+    border-radius: 5px 0 0 5px;
 }
 h1 {
     font-size: 65px;
@@ -47,7 +50,7 @@ body {
     background-color: rgb(240, 46, 110);
     font-size: 35px;
     text-align: center;
-    height: 60px;
+    height: fit-content;
     width: 50%;
     list-style: none;
     border-bottom: 1px solid rgb(231, 220, 220);
@@ -112,7 +115,6 @@ body {
 
 @media all and (max-width:1000px){
     .added {
-        height: 30px;
         margin-right: 30px;
         width: 70%;
     }
@@ -123,22 +125,27 @@ body {
         padding: 10px;
     }
     .added {
-        height: 30px;
-        margin-right: 30px;
+        margin-right: 20px;
         width: 70%;
+    padding: 0 10px 25px 10px;
+    }
+    .inputField {
+        font-size: 25px;
     }
     h1 {
         font-size: 40px;
     }
+    .save, .clearall, .askMe {
+        font-size: 15px;
+        padding: 10px;
+    }
 }
-
 
 @media all and (max-width:500px) {
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .added {
-        height: 20px;
         margin-right: 30px;
         width: 100%;
         font-size: 20px;
