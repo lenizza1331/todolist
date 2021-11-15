@@ -58,7 +58,9 @@ body {
     font-weight: bold;
     transition: all 1s ease;
 }
-
+.askmeList {
+    display: none;
+}
 
 
 @media all and (max-width:1000px){
