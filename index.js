@@ -4,12 +4,14 @@ const toDoList = document.querySelector('.toDoList');
 const saveBtn = document.querySelector('.save');
 const clearAll = document.querySelector('.clearall');
 const askMeBtn = document.querySelector('.askMe');
+const askmeList = document.querySelector('.askmeList');
 const classes = askmeList.classList;
 
 
 
 askMeBtn.addEventListener('click', function() {
     const result = classes.toggle("askmeList");
+    console.log(result)
 })
 
 
